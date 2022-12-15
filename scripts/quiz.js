@@ -37,6 +37,7 @@ const scoreDiv = document.getElementById("scoreContainer");
   Purpose: This creates three questions with image and three different answers for each question
 
   Parameter: none
+
 */
 
 // global variable, stores the question objects
@@ -83,6 +84,8 @@ let score = 0;
   It does this by accessing the current question and changing the inner HTML elements
  
   Parameter: none
+
+  Author: Same as Header
 */
 function renderQuestion(){
     // ques is the current question object
@@ -104,6 +107,8 @@ start.addEventListener("click",startQuiz);
   Purpose: startQuiz function will render the circles at the right bottom corner.
 
   Parameter: none
+
+  Author: Same as Header
 */
 function startQuiz(){
     start.style.display = "none";
@@ -130,6 +135,7 @@ function showProgress(){
 
   Parameter: 'answer'
 
+   uthor: Same as Header
 */
 function checkAns(answer){
     if( answer == questions[runningQuestion].correct){
@@ -153,6 +159,7 @@ function checkAns(answer){
 
   Parameter: none
 
+  Author: Same as Header
 */
 function correctAns(){
     document.getElementById(runningQuestion).style.backgroundColor = "rgb(0,128,0)";
@@ -163,6 +170,7 @@ function correctAns(){
 
   Parameter: none
 
+  Author: Same as Header
 */
 function wrongAns(){
     document.getElementById(runningQuestion).style.backgroundColor = "rgb(255,0,0)";
@@ -172,6 +180,8 @@ function wrongAns(){
   Purpose: This function calculates the score
 
   Parameter: none
+
+  Author: Same as Header
 */
 function calculateScore() {
     scoreDiv.style.display = "block";

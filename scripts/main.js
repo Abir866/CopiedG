@@ -15,6 +15,7 @@ Author/ Work Done: Justin Lemire - Entirety of this file.
 Purpose: To initialize the google map api and display the associated map.
 Parameters: N/A
 Return: N/A
+Author: Same as Header
 */
 
 function initMap() {
